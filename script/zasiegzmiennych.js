@@ -1,16 +1,20 @@
-function mnozenia (parametr1, parametr2) {
-    var wynik=parametr1 * parametr2;
-    console.log(wynik);
-}
-
-mnozenia (2,4);
-mnozenia (5,2);
-
+'use script';
 
 //Zasięg zmiennych Start//
 
-var wart1 = 4;
+var wart1 = 5 ;
 function dodaj() {
-    var war2=1;
-    var suma;
+    var wart2=2;
+    var suma= wart1 + wart2;
+    
 }
+
+dodaj();
+
+
+/* var zmGlobalna = 4;
+function dodaj () {
+var zmLokalna= 6;
+console.log(zmGlobalna+zmLokalna);
+}
+dodaj ()*/
