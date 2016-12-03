@@ -1,6 +1,26 @@
 'use script';
 
-var Osoba = {
+function Osoba(imie,nazwisko) {
+    
+    this.imie = imie;
+    this.nazwisko = nazwisko;
+    this.wzrost;
+    this.oczy;
+    this.wyswietlInfo = function () {
+        console.log("Imie: " + this.imie + "\n"
+                    + "Nazwisko: " + this.nazwisko + "\n"
+                    + "Wzrost: " + this.wzrost + "\n"
+                    + "oczy: " + this.oczy);
+    }
+}
+
+var klaudia= new Osoba ('Klaudia', 'Przespolewska');
+
+klaudia.wyswietlInfo();
+
+
+
+/*var Osoba = {
     imie: "Michał",
     wzrost: 180,
     wyswietlDetale: function() {
@@ -11,7 +31,7 @@ var Osoba = {
 /*Osoba.imie = "Kasia";
 Osoba.wzrost = 170;*/
 
-Osoba.wyswietlDetale();
+/*Osoba.wyswietlDetale();
 
 var Ja = {
     imie:"Klaudia",
@@ -27,7 +47,7 @@ Ja.oczy= "zielone";
 /*Ja.imie ="Anita";
 Ja.wyswietlDetale();*/
 
-Ja.oczy= "zielone";
+/*Ja.oczy= "zielone";
 console.log(Ja.oczy)
 
 /*delete Ja.oczy;
